@@ -1,0 +1,40 @@
+{
+  "npmScope": "nx-flights",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "flight-app-e2e": {
+      "tags": ["type:e2e"]
+    },
+    "flight-app": {
+      "tags": ["type:app"]
+    },
+
+    "booking-feature": {
+      "tags": ["domain:booking", "type:feature"]
+    },
+    "booking-domain": {
+      "tags": ["domain:booking", "type:domain"]
+    },
+    "booking-api": {
+      "tags": ["domain:booking", "domain:booking/api", "type:api"]
+    },
+    "boarding-feature": {
+      "tags": ["domain:boarding", "type:feature"]
+    },
+    "boarding-domain": {
+      "tags": ["domain:boarding", "type:domain"]
+    },
+    "shared-util-auth": {
+      "tags": ["domain:shared", "type:util"]
+    },
+    "shared-ui-common": {
+      "tags": ["domain:shared", "type:ui"]
+    }
+  }
+}
